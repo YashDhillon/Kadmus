@@ -6,3 +6,24 @@ People save their secrets in their diary. Most of the diary apps on app store ar
 2) Images in diary entry
 3) Hashtags and editing hashtags
 4) Animated diary entries
+
+## Screenshots
+1) Main menu
+
+![](Screenshots/MainScreen.JPG)
+
+2) New diary entry
+
+![](Screenshots/NewDiaryEntry.JPG)
+
+3) Floating action button
+
+![](Screenshots/FloatingActionButton.JPG)
+
+4) Diary entry
+
+![](Screenshots/AddingImage.JPG)
+
+5) Viewing entry
+
+![](Screenshots/ViewingEntries.JPG)
