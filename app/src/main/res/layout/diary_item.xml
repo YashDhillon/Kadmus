@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="7dp"
+    android:layout_marginRight="4dp"
+    android:layout_marginLeft="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="5dp">
+
+            <TextView
+                android:id="@+id/tvdate5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="12"
+                android:textSize="15dp"
+                android:textAlignment="center"
+                android:fontFamily="@font/advent_pro_medium"
+                />
+
+            <TextView
+                android:id="@+id/tvday5"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:text="MON"
+                android:inputType="textCapCharacters"
+                android:textSize="20dp"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:fontFamily="@font/advent_pro_medium"
+                />
+
+            <TextView
+                android:id="@+id/tvmonth5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MAY"
+                android:textSize="15dp"
+                android:textAlignment="center"
+                android:fontFamily="@font/advent_pro_medium"
+                />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:background="#90909090" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="5dp"
+            android:layout_gravity="end"
+            android:fontFamily="@font/advent_pro_medium">
+
+            <TextView
+                android:id="@+id/tvtime5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Time"
+                android:textAlignment="textEnd"
+                android:textSize="10dp"
+                android:gravity="end"
+                android:fontFamily="@font/advent_pro_medium"/>
+
+            <TextView
+                android:id="@+id/tvtitle5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Title"
+                android:textSize="23dp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:fontFamily="@font/advent_pro_medium"
+                />
+
+            <TextView
+                android:id="@+id/tvbody5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Body"
+                android:textSize="15dp"
+                android:typeface="serif"
+                android:layout_weight="10"
+                android:maxLines="5"
+                android:minLines="0"
+                android:textColor="#000000"
+                android:fontFamily="@font/advent_pro_medium"/>
+
+            <ViewFlipper
+                android:id="@+id/vFlipperMainMenu5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:background="#191919"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:layout_marginTop="7dp"
+                android:flipInterval="4000"/>
+
+            <com.greenfrvr.hashtagview.HashtagView
+                android:scrollbars="horizontal"
+                android:id="@+id/hashTagMainMenu5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tagBackground="@color/darkGrey"
+                app:tagTextSize="10dp"
+                app:tagEllipsize="marquee"
+                app:tagTextColor="#ffffff"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="7dp">
+            </com.greenfrvr.hashtagview.HashtagView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

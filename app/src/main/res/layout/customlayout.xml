@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="5dp">
+
+            <TextView
+                android:id="@+id/tvdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="12"
+                android:textSize="15dp"
+                android:textAlignment="center"
+                />
+
+            <TextView
+                android:id="@+id/tvday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="THU"
+                android:textSize="20dp"
+                android:textColor="#000000"
+                />
+
+            <TextView
+                android:id="@+id/tvmonth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MAY"
+                android:textSize="15dp"
+                android:textAlignment="center"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:background="#90909090" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="5dp"
+            android:layout_gravity="end">
+
+            <TextView
+                android:id="@+id/tvtime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Time"
+                android:textAlignment="textEnd"
+                android:textSize="8dp"
+                android:gravity="end"/>
+
+            <TextView
+                android:id="@+id/tvtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Title"
+                android:textSize="23dp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/tvbody"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Body"
+                android:textSize="15dp"
+                android:typeface="serif"
+                android:layout_weight="10"
+                android:maxLines="5"
+                android:minLines="0"
+                android:textColor="#000000"/>
+
+            <ViewFlipper
+                android:id="@+id/vFlipperMainMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:background="#191919"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:flipInterval="4000"/>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="25dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <com.greenfrvr.hashtagview.HashtagView
+                        android:id="@+id/hashTagMainMenu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:tagBackground="@color/colorPrimaryDark"
+                        app:tagTextSize="15dp"
+                        app:tagEllipsize="marquee"
+                        app:tagTextColor="#ffffff">
+                    </com.greenfrvr.hashtagview.HashtagView>
+                </LinearLayout>
+
+            </HorizontalScrollView>
+        </LinearLayout>
+
+     </LinearLayout>
+    </android.support.constraint.ConstraintLayout>

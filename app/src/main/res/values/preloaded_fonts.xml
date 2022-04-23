@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/</item>
+        <item>@font/advent_pro_medium</item>
+        <item>@font/aldrich</item>
+        <item>@font/allan_bold</item>
+        <item>@font/anton</item>
+        <item>@font/arizonia</item>
+        <item>@font/averia_gruesa_libre</item>
+        <item>@font/bad_script</item>
+        <item>@font/benchnine_bold</item>
+        <item>@font/cantata_one</item>
+        <item>@font/comfortaa_bold</item>
+        <item>@font/convergence</item>
+        <item>@font/gfs_neohellenic_bold</item>
+        <item>@font/glegoo_bold</item>
+        <item>@font/martel_sans_bold</item>
+        <item>@font/walter_turncoat</item>
+    </array>
+</resources>

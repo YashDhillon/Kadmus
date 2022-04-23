@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    android:id="@+id/layout1"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.adara.yashsd.kadmus.Main2Activity">
+
+    <!-- <View
+        android:id="@+id/backView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"/> -->
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom|right"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/ic_kadmus"
+            android:id="@+id/fabFive"
+            android:elevation="6dp"
+            app:pressedTranslationZ="12dp"
+            />
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom|right"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="140dp"
+            android:src="@drawable/ic_kadmus_function_add_picture"
+            android:id="@+id/fabSix"
+            android:elevation="6dp"
+            app:pressedTranslationZ="12dp"
+            />
+
+        <!--<android.support.design.widget.FloatingActionButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom|right"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="200dp"
+            android:src="@drawable/ic_kadmus_function_scribble"
+            android:id="@+id/fabSeven"
+            android:elevation="6dp"
+            app:pressedTranslationZ="12dp"
+            /> -->
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom|right"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="80dp"
+            android:src="@drawable/ic_kadmus_function_save"
+            android:id="@+id/fabEight"
+            android:elevation="6dp"
+            app:pressedTranslationZ="12dp"
+            />
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom|right"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="200dp"
+            android:src="@drawable/ic_kadmus_function_hashtag"
+            android:id="@+id/fabnine"
+            android:elevation="6dp"
+            app:pressedTranslationZ="12dp"
+            />
+
+        <!-- <android.support.design.widget.FloatingActionButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom|right"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="260dp"
+            android:src="@drawable/ic_kadmus_function_day_night_toggle"
+            android:id="@+id/fabten"
+            android:elevation="6dp"
+            app:pressedTranslationZ="12dp"
+            /> -->
+
+        <!-- <android.support.design.widget.FloatingActionButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom|right"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="260dp"
+            android:src="@drawable/ic_action_kadmus_function_mood"
+            android:id="@+id/fabten"
+            android:elevation="6dp"
+            app:pressedTranslationZ="12dp"
+            /> -->
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvHead"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#000000"
+                    android:fontFamily="@font/advent_pro_medium"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="5dp"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp" />
+
+                <ViewFlipper
+                    android:id="@+id/vFlipper"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:background="#191919"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:flipInterval="4000"/>
+            
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <TextView
+                    android:id="@+id/tvTitleHeading"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#00000000"
+                    android:fontFamily="@font/advent_pro_medium"
+                    android:hint="Title"
+                    android:textSize="20dp"
+                    android:typeface="serif"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:backgroundTint="#00000000"
+                    />
+
+                <EditText
+                    android:id="@+id/etname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="0"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:paddingTop="5dp"
+                    android:scrollbars="vertical"
+                    android:text=""
+                    android:fontFamily="@font/advent_pro_medium"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="#90909090"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvBodyHeading"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Dear Diary"
+                            android:textSize="25dp"
+                            android:typeface="serif"
+                            android:fontFamily="@font/advent_pro_medium"/>
+
+                        <EditText
+                            android:id="@+id/etBody"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="0"
+                            android:fontFamily="@font/advent_pro_medium"
+                            android:inputType="textCapSentences|textMultiLine"
+                            android:scrollbars="vertical"
+                            android:text=""
+                            android:textColor="#000000"
+                            android:textSize="25dp"
+                            android:typeface="serif" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.greenfrvr.hashtagview.HashtagView
+                        android:id="@+id/hashTag"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:tagBackground="@color/colorPrimaryDark"
+                        app:tagTextSize="15dp"
+                        app:tagEllipsize="marquee"
+                        app:tagTextColor="#ffffff">
+
+                    </com.greenfrvr.hashtagview.HashtagView>
+
+                </android.support.constraint.ConstraintLayout>
+
+                <Button
+                    android:id="@+id/hashTagEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Edit hashtags"
+                    android:textSize="20dp"
+                    android:typeface="serif"
+                    android:textColor="#ffffff"
+                    android:backgroundTint="#191919"
+                    android:fontFamily="@font/advent_pro_medium"
+                    />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</android.support.constraint.ConstraintLayout>
